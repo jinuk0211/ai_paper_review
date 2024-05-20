@@ -27,6 +27,14 @@ input말고도 output 또한 interleaved 되있는 것을 알수 잇다.
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/469001cd-f8d2-4353-a701-baff26cfff43)
 
+what matters when building VLM
+idefics 2
+사용한 데이터셋 cauldron
+https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
+특이점
+ pooling layer는 정보 손실이 일어나는 단점이 있다
+-> perceiver resampler라는 학습가능한 트랜스포머 기반의 풀링을 사용
+
 miralsol3b
 비디오와 오디오는 텍스트보다 더 많이 얻어짐(obtained at higher rate), 시간에 따라 정렬됨
 

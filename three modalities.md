@@ -15,6 +15,7 @@ https://arxiv.org/abs/2403.05530
 
 
 #### miralsol3b
+-------------
 비디오와 오디오는 텍스트보다 더 많이 얻어짐(obtained at higher rate), 시간에 따라 정렬됨
 
 대부분 global context로써 제공되는 텍스트와 일치하지 않는다

@@ -1,11 +1,12 @@
 page 1
-------------------------
-해석가능한 AI - anthropic
+------------------
+해석가능한 AI
 
 https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
-Extracting Interpretable Features from Claude 3 Sonnet
+Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet
 
-모델의 interpretablity의 목표
+AI의 해석가능함
+
 1. AI가 무엇을 배우는가?
 2. 특정결과를 생성하기 위해 입력값의 어떤 특징,패턴들이 사용됬나
 
@@ -14,11 +15,14 @@ Extracting Interpretable Features from Claude 3 Sonnet
 1. AI자체의 디버깅, 조정( 하이퍼 파라미터가 구체적으로 미치는 영향, 왜 모델이 성능이 좋지 않을까)
 
 2. 우리가 모르는 데이터 자체의 새로운 인사이트
+
 예시) 암 진단을 하는 detection모델이 있다 할 때, 데이터내의 특정 세포의 특이점으로(안 알려진) 이를 판단한다던가의 모델이 학습한 내용을 알 수 있음)
 
 3. 배포 하기 전의 상품성 강화
-interpretability는 안전성 부분에서의 매우 매우 큰 이점
 
+interpretability는 안전성 부분에서의 매우 큰 이점
+
+참고영상 ↓
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/2b885b35-380b-474d-88f0-703037201d05)
 
 page 2

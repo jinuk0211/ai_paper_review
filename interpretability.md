@@ -20,8 +20,6 @@ Extracting Interpretable Features from Claude 3 Sonnet
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/2b885b35-380b-474d-88f0-703037201d05)
 
-![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/29067fe6-1da9-44b0-9682-a14dccb834e8)
-
 page 2
 ------------------
 feature들이 의미하는 것과 뉴럴넷 안에서 이것들이 무슨 역할을 하는가
@@ -42,6 +40,9 @@ feature에 관한 2가지 주장
 특징이 active 할 때, 관련 개념이 context 내에 존재합니다 (specificity).
 특징의 활성화에 개입시 관련된 downstream 행동이 일어남 (행동에 영향)
 
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/29067fe6-1da9-44b0-9682-a14dccb834e8)
+
+
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/9abf0f6b-00e6-4450-8941-210afb43d279)
 
@@ -49,6 +50,19 @@ feature에 관한 2가지 주장
 
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/72c3ca8d-3eda-469b-961e-62f45ca7439f)
+
+page 3
+----------------------
+influence on behavior
+
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/0460d8ce-977b-464b-b226-f2b571bc36eb)
 
+page 4
+--------------------
+sophisticated feature
+지금까지는 전의 연구 towards monosemancity의 연구와 같이 트랜스포머의 레이어 하나의 활성화 함수를, 세상의 매우 얕은 정보를 반영한 것을 연구한 것과 유사함
+
+Sonet과 같은 더 크고 더 정교한 모델은 더 깊이있고 명백한 이해에 대한 feature를 담고 있을 것이라 생각함.
+이를 위해 프로그래밍에 대한 context에서 feature가 활성화 되는 것을 탐구
+예) 코드의 정확성, 변수 타입
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/3a4f003e-a88d-4a15-8046-c76dc0646b02)

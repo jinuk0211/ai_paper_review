@@ -12,6 +12,9 @@ superposition 중첩, polysemanticity 다중의미
 영어 단어가 문자를 조합해서 만들어지고, 문장이 단어를 조합해서 만들어지듯이, 
 AI 모델의 모든 특징은 뉴런을 조합해서 만들어지고, 모든 내부 상태는 특징을 조합해서 만들어집니다.
 
+page 
+----------------
+독일어 특화 뉴런은 프랑스어 텍스트를 볼때 활성화되지 않음 -> superposition free model? -> MoE가 그런 경향이 있음 -> 뇌의 섹터 분할과 비슷함
 page 4
 ------------------
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/afb3e608-defd-4a94-adde-ec182e06e374)

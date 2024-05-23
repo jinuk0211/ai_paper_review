@@ -15,6 +15,12 @@ AI 모델의 모든 특징은 뉴런을 조합해서 만들어지고, 모든 내
 page 
 ----------------
 독일어 특화 뉴런은 프랑스어 텍스트를 볼때 활성화되지 않음 -> superposition free model? -> MoE가 그런 경향이 있음 -> 뇌의 섹터 분할과 비슷함
-page 4
+Inception v1, a single neuron responds to faces of cats and fronts of cars 
+[1]
+. In a small language model we discuss in this paper, a single neuron responds to a mixture of academic citations, English dialogue, HTTP requests, and Korean text. Polysemanticity makes it difficult to reason about the behavior of the network in terms of the activity of individual neurons.
+
+page 4 superposition에서 feature 찾기
 ------------------
+ (1) 활성화 희소성을 장려함으로써 중첩 없이 모델을 만드는 것, (2) 중첩을 나타내는 모델에서 과잉 완전한(feature overcomplete) 특징 기초를 찾기 위해 사전 학습(dictionary learning)을 사용하는 것, (3) 두 가지를 결합한 혼합 접근법을 사용하는 것. 이 연구가 출판된 이후, 우리는 이 세 가지 접근법을 모두 탐구했습니다. 결국, 희소한 구조적 접근법(접근법 1)이 다의성(polysemanticity)을 방지하기에 충분하지 않다는 것을 설득하는 반례들을 개발했고, 표준 사전 학습 방법(접근법 2)은 과적합 문제로 인해 상당한 문제를 겪고 있음을 알게 되었습니다.
+
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/afb3e608-defd-4a94-adde-ec182e06e374)

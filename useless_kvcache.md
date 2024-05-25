@@ -23,3 +23,5 @@ https://arxiv.org/pdf/2405.12981
 
 accuracy 감소 없이 kv cache 사이즈를 2배 줄임
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/c801f97b-eb68-4e03-b77f-82b59589b94c)
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/276811b9-7a05-4207-8f25-c2dc7da31fec)

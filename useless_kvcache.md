@@ -5,6 +5,7 @@ https://arxiv.org/pdf/2405.10637
 You Only Cache Once: Decoder-Decoder Architectures for Language Model
 --------------------------
 https://arxiv.org/pdf/2405.05254
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/515a33c0-5fb0-48a2-b3f9-bcca3558d3dc)
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/9086a806-1949-40d7-a2ad-f7e2d2e5a158)
 

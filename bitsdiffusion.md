@@ -15,3 +15,6 @@ https://snap-research.github.io/BitsFusion/
 -> quantization-aware training (QAT) 진행
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/4ca53458-f56c-4d9b-82b5-549e628b540c)
+
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/96c1f96a-7b2b-4fbf-af0d-8f027a12948e)

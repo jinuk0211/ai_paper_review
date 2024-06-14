@@ -70,7 +70,7 @@ classification , object detection, segmentation, 멀티모달 LLM (output이 이
 토크나이져가 이미지 rebundancy를 활용해 더 효과적으로 압축할 수 있을 수도 모르는게 사전 차단됨
 
 예시로 object queries 나 perceiver resampler task 에서는 64개정도의 미리정해진 토큰 수로 인코딩을 한 후 이를 bounding box나 자막을 생성하기 위해 그대로 활용한다
-즉 input -> latent space (3,64,64) -> (3,10) (flatten x)
+즉 인코더(input) -> latent space (1D 시퀸스)
 
 이유 
 이미지(input)에서 이미지(output)로가 아닌 이미지(input)에서 특정한 포맷, 구조로 결과값이 나옴 
@@ -81,11 +81,38 @@ DiT-XL/2의 SOTA 성능 능가, 74배 빨리
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/145a45a6-6a3c-4499-938e-da785499c913)
 
 메소드
+기존의 vector quantizer 설명
+input (높이, 너비, 채널) 이미지가 인코더 통과후 
+Z = (높이/f , 너비/f, 임베딩 dim) 이후 vector quantizer 통과후
+디코더를 통과해 detokenzize 됨
+
+이는 latent representaion을 어떤 정직인 2D grid에 국한되게 함 ,위의 한계 포함
+그리고 f= downsample factor는 대부분 4,8,16으로 (256 x 256 x 3)의 이미지가 잇다면
+토큰의 수는 보통 (잠재 표현공간) 아래와 같다
+256/4 x 256/4 = 4096
+256/8 x 256/8 = 1024
+256/16 x 256/16 = 256 
+
+그래서 ViT를 통해 일단 이미지를 patchify(H/f × W/f ×D)한 후
+latent token(K×D)을 concat 하고 이를 ViT 인코더에 넣는데 
+이 인코더 결과값의 shape을 latent token으로 유지 -> 1차원 sequence latent representaion
+그리고 이 잠재 표현공간 벡터를 quantized 시킨후 
+mask token(한 이유: Masked autoencoders are scalable vision learners, All are worth words: A
+vit backbone for diffusion models)을 concat하고 이를 decoder에 통과시키면 끝이난다
+
+매우 간단함에도 별로 연구되지 않음
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/37ec8a42-5dcc-453f-bf48-c98bfd552d93)
+
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/3f3a63bc-a142-4f5e-b623-a2aab84959f2)
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/868a35d8-96dc-4769-a8ae-fe628ef96ddc)
 
 evaluation 
 https://github.com/openai/guided-diffusion/tree/main/evaluations
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/4f3a5a13-e72c-44fb-af82-31defd4c9d51)
+
 
 autoregressive Model beats Diffusion 
 ---------------------------------

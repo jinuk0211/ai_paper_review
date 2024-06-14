@@ -7,8 +7,10 @@
 3. autoregressive Model beats Diffusion - VAR (DiT x)
 2024년 6월 10일
 
-1. video is worth thousands of words
+video is worth thousands of words
 -------------------------------
+https://arxiv.org/pdf/2406.06040
+
 비디오는 이미지보다 시간이라는 차원이 더해지기 때문에 더 많은 정보를 포함하고 있다
 각각의 비디오마다 여러개의 이벤트를 포함하고 이 이벤트가 여러개의 scene들을 포함하기 때문에 자막처리 주석 다는게 매우 힘들다
 기존의 WebVid-10M and Panda-70M 데이터셋은 15초보다 짧은 클립에 2,3개의 문장으로 묘사되어있다
@@ -44,27 +46,58 @@ e.g) 일본여행 브이로그라 치면
 Vript-HAL 벤치마크 (hallucination)
 실제로 기존의 image LLM들 평가
 BLIP2, InstructBLIP, Qwen-VL, LLaVA 1.6 34B, video LLMs, VideoChatGPT, VideoLLaMA, VideoChat, VideoChat2, ST-LLM, Claude 3-Sonnet Opus, GPT-4V
+
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/aa1e0c61-5d8b-420c-9055-6eb73d8960df)
+
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/8a839919-df50-4c40-a5f6-c26a751000e4)
 
 
 
 2. Image is worth 32 tokens
    ---------------------
+https://arxiv.org/pdf/2406.07550
 
-이미지 토크나이져의 중요성 (이미지 -> latent space)
+이미지 토크나이져의 중요성 (이미지 -> latent space) 에서 latent space를 1차원의 어떤 시퀸스로
 TiTok (Transformer-based 1-Dimensional Tokenizer)라는 걸 사용
 
-classification , object detection, segmentation, multi-modal large language
-models <-- Unet 비스무리한(enco-deco) tokenizer-detokenizer 이 사용된다하면
-detokenizer은 사실상 쓸모가 없지 않나??
+classification , object detection, segmentation, 멀티모달 LLM (output이 이미지가 아닌 1D sequence)
+ <-- Unet 비스무리한(enco-deco) 구조의 tokenizer-detokenizer 이 사용된다하면 (2D 구조로 굳이 압축 시킬 필요가 있나?)
+
+근본적인 한계 
+원래 이미지의 패치가 latent 토큰의 이미지 정보 위치와 같음
+맨 위 왼쪽 패치 = 맨 위 왼쪽 latent token 
+토크나이져가 이미지 rebundancy를 활용해 더 효과적으로 압축할 수 있을 수도 모르는게 사전 차단됨
+
+예시로 object queries 나 perceiver resampler task 에서는 64개정도의 미리정해진 토큰 수로 인코딩을 한 후 이를 bounding box나 자막을 생성하기 위해 그대로 활용한다
+즉 input -> latent space (3,64,64) -> (3,10) (flatten x)
 
 이유 
 이미지(input)에서 이미지(output)로가 아닌 이미지(input)에서 특정한 포맷, 구조로 결과값이 나옴 
 
-https://arxiv.org/pdf/2406.06040
-https://arxiv.org/pdf/2406.07550
+사용된 아키텍쳐
+ViT 인코더, 디코더, vector quantizer
 DiT-XL/2의 SOTA 성능 능가, 74배 빨리
-근본적인 한계 
-원래 이미지의 패치가 latent 토큰의 이미지 정보 위치와 같음
-맨 위 왼쪽 패치 = 맨 위 왼쪽 latent token 
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/145a45a6-6a3c-4499-938e-da785499c913)
+
+메소드
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/868a35d8-96dc-4769-a8ae-fe628ef96ddc)
+
+evaluation 
+https://github.com/openai/guided-diffusion/tree/main/evaluations
+
+autoregressive Model beats Diffusion 
+---------------------------------
 https://arxiv.org/abs/2406.06525
+llama 기반으로 특정한 inductive bias 없이 좋은 퍼포먼스 스케일링이 적합하게 된다면
+
+토크나이져
+downsample 비율 16 ,rFID 스코어 0.94로 재구성 퀄리티또한 높음
+다른 확산모델과의 비교
+
+1. 1M에서 3.1B 파라미터에 이르는 일련의 클래스 조건부(class conditional) 이미지 생성 모델, ImageNet 256×256 벤치마크에서 2.18 FID를 달성하여 LDM, DiT와 같은 인기 있는 확산 모델을 능가
+
+2. LAION-COCO와 고품질의 이미지를 통해 2단계 학습을 거친 775M 파라미터의 텍스트 조건부 이미지 생성 모델, 시각적 품질과 텍스트 정렬(text alignement) 에서 경쟁력 있는 성능을 입증
+3. 
+vLLM 프레임워크를 통해, 326%에서 414%의 속도 향상을 달성

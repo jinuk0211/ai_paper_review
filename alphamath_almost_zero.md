@@ -89,5 +89,24 @@ Tree-of-Thought, Reasoning-via-Planing(https://arxiv.org/abs/2305.14992) ,  infe
 메소드
 ------------------
  process provision : ORM보다 더 정확하고 세밀한 피드백을 제공하며, 오류의 정확한 위치를 식별, 또한 수학 문제 해결 영역에서 잘못된 추론을 완화
+ 
 이러한 장점에도 불구하고, PRM을 훈련하기 위해 각 단계의 정확성에 대한 intermediate signal를 얻는 것은 간단하지 않음. 이전 연구(Lightman et al., 2023)에서는 도메인 전문가(domain expert)를 사용하여 수동으로 레이블을 주석 처리하는 방법에 의존했는데, 이는 스케일하기 어렵다.
+
+구체적으로, 질문 
+질문과 처음 t단계의 prefix 솔루션 (1에서 t까지) 을 받아 최종 답에 도달할 때까지 후속 단계를 완료할 수 있는 "완성기(completer)" 정책이 수립됩니다. 
+
+그림 2(a)에 나타난 바와 같이, 솔루션의 어느 단계에서든 completion policy을 사용하여 해당 단계에서 무작위로 
+k개의 rollout을 샘플링할 수 있다. 이러한 rollout의 최종 답은 황금 답(golden answer)과 비교, 
+k개의 롤아웃 각각에 대한 답의 정확성 레이블이 제공됩니다. 그 후, 
+t-번째 단계에서의 총 롤아웃 수에 대한 정확한 롤아웃 수의 비율은 Eq. (1)과 같이 
+t까지의 prefix 단계의 "정확성 수준"을 추정합니다. 논리적 추론 시나리오에서는 하나의 롤아웃이라도 정확하다면, 
+ ​x(1~t)는 정확하다고 간주
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/c9027317-8c4e-4daa-9c72-a44160533b5a)
+ 
+한 단계 더 나아가, 솔루션의 중간 단계의 정확성을 주석하는 직관적인 전략은 처음부터 끝까지 모든 단계에 대해 rollout을 수행하는 것 이는 Math-Shepherd와 MiPS 모두에서 
+그러나 이러한 brute-fore 방식은 많은 정책 call이 필요
+이런 주석 효율성을 최적화하기 위해 우리는 이진 검색 기반 몬테카를로 추정을 제안
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/530eb664-a082-4061-9032-f4be93cea1e5)
 

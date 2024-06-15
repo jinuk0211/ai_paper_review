@@ -57,7 +57,7 @@ T: 탐색 프로세스의 종료를 결정하는 함수(기준 : 최대 반복�
 
 Improve Mathematical Reasoning in Language
 Models by Automated Process Supervision
---------------------------
+===========================
 https://github.com/MARIO-Math-Reasoning/Super_MARIO
 2024년 6월 5일
 https://arxiv.org/pdf/2406.06592
@@ -86,5 +86,8 @@ PRM이 ORM을 능가한다는 증거 (Let’s Verify Step by Step -2023 openai ,
 planning 알고리즘
 Tree-of-Thought, Reasoning-via-Planing(https://arxiv.org/abs/2305.14992) ,  inference-time MCTS
 
-  
+메소드
+------------------
+ process provision : ORM보다 더 정확하고 세밀한 피드백을 제공하며, 오류의 정확한 위치를 식별, 또한 수학 문제 해결 영역에서 잘못된 추론을 완화
+이러한 장점에도 불구하고, PRM을 훈련하기 위해 각 단계의 정확성에 대한 intermediate signal를 얻는 것은 간단하지 않음. 이전 연구(Lightman et al., 2023)에서는 도메인 전문가(domain expert)를 사용하여 수동으로 레이블을 주석 처리하는 방법에 의존했는데, 이는 스케일하기 어렵다.
 

@@ -27,9 +27,15 @@ https://youtu.be/JjxBNBzDbNk?si=Df_7skONEO5GjqFb
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/7c448d43-b74c-454d-b438-403cd0cb1173)
 
 linear attention
+
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/beb2972c-4691-4acd-af55-f7924b180f01)
 
 saler a = 1
+
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/615f66bf-7e5a-43e6-9df2-d8d052f5ca12)
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/3478d2d1-2400-4acb-9c5e-50fc1a40a19c)
+
+M matrix
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/2d73b354-863c-4aac-ba8e-aa68868c7ecb)

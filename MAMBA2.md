@@ -53,3 +53,11 @@ step 2 A matrix 외적곱
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/847d47d8-91e2-4740-b379-53da4bf86659)
 
+step 3 C vlaue
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/c9f1d562-9d80-40c4-92a1-1256edceaf73)
+
+== SSD 알고리즘
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/dea36d59-341b-4dc9-90f2-232bdae9f675)
+

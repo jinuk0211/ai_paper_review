@@ -110,3 +110,7 @@ t까지의 prefix 단계의 "정확성 수준"을 추정합니다. 논리적 추
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/530eb664-a082-4061-9032-f4be93cea1e5)
 
+(A) 설명
+
+(b) 설명
+(C) 설명

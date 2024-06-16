@@ -61,3 +61,6 @@ step 3 C vlaue
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/dea36d59-341b-4dc9-90f2-232bdae9f675)
 
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/e5f9c421-e9e3-4c7f-9527-04a265b0153c)
+
+

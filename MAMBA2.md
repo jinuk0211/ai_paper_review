@@ -39,3 +39,5 @@ saler a = 1
 M matrix
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/2d73b354-863c-4aac-ba8e-aa68868c7ecb)
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/472df8ad-7805-4e1a-9107-ebe18d3ca437)

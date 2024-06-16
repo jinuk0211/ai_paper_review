@@ -31,3 +31,5 @@ linear attention
 
 saler a = 1
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/615f66bf-7e5a-43e6-9df2-d8d052f5ca12)
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/3478d2d1-2400-4acb-9c5e-50fc1a40a19c)

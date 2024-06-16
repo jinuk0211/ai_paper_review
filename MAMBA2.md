@@ -1,3 +1,15 @@
+mamba survey
+https://www.threads.net/@rien_n_est/post/C7HeD5vyoNj/?xmt=AQGzAZ31eTtXcnaeRzSgGlmw4KS2u_6o85UC2z0ujpMtjQ
+
+linear attention
+https://www.threads.net/@rien_n_est/post/C6WcNH-SdK8/?xmt=AQGzphTGRouqM59KMtzvodA85nxSUsgohA2cvb1cmPvheA
+
+
+flashattention
+https://www.threads.net/@rien_n_est/post/C50pMGwyY14/?xmt=AQGzbBlo6sqhHfBt7rR4u9V4LKDg9H5PBiK9tA8KwTntyA
+
+고려대 산업경영 맘바
+https://youtu.be/JjxBNBzDbNk?si=Df_7skONEO5GjqFb
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/bffcd1ba-4e04-49ec-9ff5-11541564da8a)
 

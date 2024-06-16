@@ -13,3 +13,9 @@
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/be8165f7-74e4-4d8e-87c6-33b0253c73fe)
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/7c448d43-b74c-454d-b438-403cd0cb1173)
+
+linear attention
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/beb2972c-4691-4acd-af55-f7924b180f01)
+
+saler a = 1
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/615f66bf-7e5a-43e6-9df2-d8d052f5ca12)

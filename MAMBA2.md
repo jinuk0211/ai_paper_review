@@ -41,3 +41,15 @@ M matrix
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/2d73b354-863c-4aac-ba8e-aa68868c7ecb)
 
 ![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/472df8ad-7805-4e1a-9107-ebe18d3ca437)
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/ce685835-472d-4733-87eb-4c96404d04f8)
+
+step 1 hidden state 구하기
+outer product
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/edabe939-354e-4a8a-86e5-082cafdd4aee)
+
+step 2 A matrix 외적곱
+
+![image](https://github.com/jinuk0211/ai_paper_review/assets/150532431/847d47d8-91e2-4740-b379-53da4bf86659)
+
